@@ -13,7 +13,8 @@ import {
     ShowChart,
     AccountBalance,
     People,
-    Settings
+    Settings,
+    ShoppingCart
 } from '@mui/icons-material';
 import { useNavigate, useLocation } from 'react-router-dom';
 
@@ -22,6 +23,7 @@ const drawerWidth = 240;
 const menuItems = [
     { text: 'Dashboard', icon: <Dashboard />, path: '/' },
     { text: 'Stocks', icon: <ShowChart />, path: '/stocks' },
+    { text: 'Place Order', icon: <ShoppingCart />, path: '/place-order' },
     { text: 'Portfolios', icon: <AccountBalance />, path: '/portfolios' },
     { text: 'Users', icon: <People />, path: '/users' },
     { text: 'Settings', icon: <Settings />, path: '/settings' },

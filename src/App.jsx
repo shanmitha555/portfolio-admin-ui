@@ -8,6 +8,8 @@ import AddStock from './pages/AddStock';
 import StockPrices from './pages/StockPrices';
 import AddStockPrice from './pages/AddStockPrice';
 import EditStockPrice from './pages/EditStockPrice';
+import PlaceOrder from './pages/PlaceOrder';
+import Portfolios from './pages/Portfolios';
 
 const theme = createTheme({
   palette: {
@@ -31,10 +33,11 @@ function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/stocks" element={<Stocks />} />
             <Route path="/add-stock" element={<AddStock />} />
+            <Route path="/place-order" element={<PlaceOrder />} />
             <Route path="/stock-prices/:stockSymbol" element={<StockPrices />} />
             <Route path="/add-stock-price/:stockSymbol" element={<AddStockPrice />} />
             <Route path="/edit-stock-price/:stockSymbol/:priceId" element={<EditStockPrice />} />
-            <Route path="/portfolios" element={<div>Portfolios Page (Coming Soon)</div>} />
+            <Route path="/portfolios" element={<Portfolios />} />
             <Route path="/users" element={<div>Users Page (Coming Soon)</div>} />
             <Route path="/settings" element={<div>Settings Page (Coming Soon)</div>} />
           </Routes>
