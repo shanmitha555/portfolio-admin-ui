@@ -40,7 +40,7 @@ const Sidebar = () => {
                 '& .MuiDrawer-paper': {
                     width: drawerWidth,
                     boxSizing: 'border-box',
-                    marginTop: '64px', // Account for header height
+                    position: 'relative',
                 },
             }}
         >
